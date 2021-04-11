@@ -1,0 +1,9 @@
+<div>
+    <div class="title"><h1>IP Address Tracker</h1></div>
+    <div class="searchbar">
+        <input class="search_input" id="search-bar-input" (input)="changeValue($event.target.value)"
+         type="search" placeholder="Search for any IP address or domain" [value]="myIpAddress && myIpAddress.ip" (keydown.enter)="sentValue()">       
+        <button class="search-button" (click)="sentValue()" ><img class="search_icon" src="/assets/images/icon-arrow.svg"></button>
+    </div>
+</div>
+

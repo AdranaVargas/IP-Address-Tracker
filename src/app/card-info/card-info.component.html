@@ -1,0 +1,24 @@
+<mat-card class="info-card">
+  <mat-card-content class="info-content" *ngIf="ipAddressData">
+    <div class="card-title">
+      <strong class="title">IP ADDRESS</strong>
+      <strong class="sub-title">{{ip}}</strong>
+    </div>
+    <div class="vl"></div>
+    <div class="card-title">
+      <strong class="title">LOCATION</strong>
+      <strong class="sub-title">{{location}}</strong>
+      <strong class="sub-title">{{postalCode}}</strong>
+    </div>
+    <div class="vl"></div>
+    <div class="card-title">
+      <strong class="title">TIME ZONE</strong>
+      <strong class="sub-title">UTC{{timeZone}}</strong>
+    </div>
+    <div class="vl"></div>
+    <div class="card-title">
+      <strong class="title">ISP</strong>
+      <strong class="sub-title">{{isp}}</strong>
+    </div>
+  </mat-card-content>
+</mat-card>
